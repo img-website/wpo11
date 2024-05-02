@@ -6,11 +6,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        'theme1': '#e61733',
-        'theme2': '#3130ee',
+        'theme1': '#3130ee',
+        'theme2': '#e61733',
         // 'theme3': '#171347',
         // 'theme4': '#1c1c27',
       },
+      fontFamily: {
+        'Inter': ['"Inter", sans-serif'],
+      }
     },
   },
   plugins: [],
