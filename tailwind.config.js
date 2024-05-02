@@ -6,8 +6,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'theme1': '#003d8b',
-        'theme2': '#06b6f0',
+        'theme1': '#e61733',
+        'theme2': '#3130ee',
         // 'theme3': '#171347',
         // 'theme4': '#1c1c27',
       },
