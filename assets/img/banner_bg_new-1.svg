@@ -1,7 +1,7 @@
 <svg width="1920" height="720" viewBox="0 0 1920 720" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_1461_298)">
 <rect width="1920" height="720" fill="url(#paint0_radial_1461_298)"/>
-<rect x="1704.69" y="-333" width="642" height="372" transform="rotate(38.9172 1704.69 -333)" fill="#3130EE" fill-opacity="0.16"/>
+<rect x="1704.69" y="-333" width="642" height="372" transform="rotate(38.9172 1704.69 -333)" fill="#FCAFBA"/>
 <rect x="2103.5" y="681.039" width="642" height="372" transform="rotate(143.805 2103.5 681.039)" fill="white" fill-opacity="0.16"/>
 <rect opacity="0.15" x="1677.26" y="113" width="394.387" height="174.407" transform="rotate(38.7893 1677.26 113)" fill="url(#pattern0_1461_298)"/>
 </g>
@@ -11,7 +11,7 @@
 </pattern>
 <radialGradient id="paint0_radial_1461_298" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1261.5 -2.45546e-05) rotate(93.3498) scale(1411.91 3765.1)">
 <stop stop-color="white"/>
-<stop offset="1" stop-color="#3130EE" stop-opacity="0.13"/>
+<stop offset="1" stop-color="#E61733"/>
 </radialGradient>
 <clipPath id="clip0_1461_298">
 <rect width="1920" height="720" fill="white"/>

@@ -932,6 +932,10 @@ video {
   aspect-ratio: auto;
 }
 
+.aspect-\[1\/0\.9\]{
+  aspect-ratio: 1/0.9;
+}
+
 .size-10{
   width: 2.5rem;
   height: 2.5rem;
