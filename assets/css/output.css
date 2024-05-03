@@ -970,6 +970,10 @@ video {
   display: none;
 }
 
+.aspect-\[1\/0\.9\]{
+  aspect-ratio: 1/0.9;
+}
+
 .aspect-\[1519\/812\]{
   aspect-ratio: 1519/812;
 }
