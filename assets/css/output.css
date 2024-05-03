@@ -1032,16 +1032,16 @@ video {
   width: 100%;
 }
 
+.min-w-36{
+  min-width: 9rem;
+}
+
 .min-w-52{
   min-width: 13rem;
 }
 
 .min-w-6{
   min-width: 1.5rem;
-}
-
-.min-w-36{
-  min-width: 9rem;
 }
 
 .max-w-7xl{
@@ -3114,14 +3114,14 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:mx-5{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
   .md\:mx-16{
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .md\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .md\:-mt-24{
