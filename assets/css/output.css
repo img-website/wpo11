@@ -1318,6 +1318,10 @@ video {
   list-style-position: outside;
 }
 
+.list-decimal{
+  list-style-type: decimal;
+}
+
 .list-none{
   list-style-type: none;
 }
@@ -2024,10 +2028,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.\!rounded-md{
-  border-radius: 0.375rem !important;
-}
-
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2066,11 +2066,6 @@ video {
 .rounded-t{
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-}
-
-.rounded-t-md{
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
 }
 
 .rounded-bl{
@@ -2566,6 +2561,14 @@ video {
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.ps-10{
+  padding-inline-start: 2.5rem;
+}
+
+.ps-7{
+  padding-inline-start: 1.75rem;
 }
 
 .text-left{
@@ -3520,19 +3523,14 @@ video {
   width: 100%;
 }
 
-.peer\/mm:checked ~ .peer-checked\/mm\:rounded-t{
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+.peer\/mm:checked ~ .peer-checked\/mm\:\!rounded-t-md{
+  border-top-left-radius: 0.375rem !important;
+  border-top-right-radius: 0.375rem !important;
 }
 
 .peer\/mm:checked ~ .peer-checked\/mm\:rounded-t-md{
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
-}
-
-.peer\/mm:checked ~ .peer-checked\/mm\:\!rounded-t-md{
-  border-top-left-radius: 0.375rem !important;
-  border-top-right-radius: 0.375rem !important;
 }
 
 .peer\/mm:checked ~ .peer-checked\/mm\:\!border-b-0{
