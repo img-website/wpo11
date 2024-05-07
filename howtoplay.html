@@ -24,61 +24,99 @@
     <title>How to play</title>
     <link rel="stylesheet" href="./assets/css/output.css" />
 
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("sidebar-overlay");
+      sidebar.classList.toggle("translate-x-full");
+      overlay.classList.toggle("invisible");
+      }
+    </script>
+
 </head>
 <body>
-         <!-- header start -->
-         <section class="fixed w-full top-0 z-[999]">
-            <div class="border shadow-lg shadow-black-50 bg-white z-[999] p-2">
-              <div class="flex items-center justify-between md:mx-5 md:px-2 lg:mx-8 lg:px-5">
-                <div class="flex z-20">
-                  <a href="./index.html" class="logo h-16 md:h-20 inline-block">
-                    <img class="size-full" src="./assets/img/wpo11logo.png" alt="" />
-                  </a>
+           <!-- header start -->
+    <section class="fixed w-full top-0 z-[999]">
+      <div class="border shadow-lg shadow-black-50 bg-white z-[999] p-2">
+        <div class="flex items-center justify-between md:mx-5 md:px-2 lg:mx-8 lg:px-5">
+          <div class="flex z-20">
+            <a href="./index.html" class="logo h-16 md:h-20 inline-block">
+              <img class="size-full" src="./assets/img/wpo11logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="md:flex md:gap-14 hidden w-3/4 justify-end items-center">
+            <!-- Existing links -->
+            <!-- <div class="group">
+              <div class="flex items-center">
+                <div>
+                  <a class="text-theme1 font-medium" href="./index.html">Games</a>
                 </div>
-                <div class="md:flex hidden w-3/4 justify-between items-center">
-                  <div class="group">
-                  <div class="flex items-center">
-                    <div>
-                      <a class="text-theme1 font-medium" href="./index.html">Games</a>
-                    </div>
-                    <div class="pl-2 text-theme1 pt-1">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        height="25px"
-                        width="25px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="opacity-0 invisible absolute group-hover:opacity-100 group-hover:visible pt-3 min-w-52">
-                  <div class="border bg-gray-100 text-theme1 flex flex-col gap-2 ">
-                    <a href="" class="border-b pl-5 pr-10 py-1 hover:font-bold">Rummy</a>
-                    <a href="" class="pl-5 pr-12 py-1  hover:font-bold">Fantasy Games</a>
-                  </div>
-              </div>
-              </div>
-                  <a class="text-theme1 font-medium" href="">Blog</a>
-                  <a class="text-theme1 font-medium" href="">Web Stories</a>
-                  <a class="text-theme1 font-medium" href="./about.html">About</a>
-                  <a class="text-theme1 font-medium" href="">FAQ's</a>
-                  <a class="text-theme1 font-medium" href="">Download App</a>
+                <div class="pl-2 text-theme1 pt-1">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px">
+                    <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                  </svg>
                 </div>
-                <div class="flex items-center md:hidden text-theme1 ">
-                  <label for="sideToggle" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
-                  </label>
               </div>
+              <div class="opacity-0 invisible absolute group-hover:opacity-100 group-hover:visible pt-3 min-w-52">
+                <div class="border bg-gray-100 text-theme1 flex flex-col gap-2">
+                  <a class="border-b pl-5 pr-10 py-1 hover:font-bold">Rummy</a>
+                  <a class="pl-5 pr-12 py-1  hover:font-bold">Fantasy Games</a>
+                </div>
               </div>
-            </div>
-          </section>
-          <!-- header ends -->
+            </div> -->
+            <a class="text-theme1 font-medium" href="./about.html">About</a>
+            <a class="text-theme1 font-medium" href="./blog.html">Blog</a>
+            <a class="text-theme1 font-medium" href="#">Download App</a>
+            <a class="text-theme1 font-medium" href="howtoplay.html">How to play</a>
+            <a class="text-theme1 font-medium" href="./contactus.html">Contact us</a>
+          </div>
+          <div class="flex items-center md:hidden text-theme1">
+            <button onclick="toggleSidebar()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px">
+                <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sidebar Overlay -->
+<div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-80 z-[998] invisible transition-opacity duration-300 ease-in-out" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar -->
+    <div class="">
+    <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-gradient-to-t from-theme1 to-theme2 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
+      <div class="flex justify-end p-4">
+        <!-- <div class="h-16">
+          <img class="size-full" src="./assets/img/wpo11logo.png" alt="">
+        </div> -->
+        <button onclick="toggleSidebar()" class="p-2 text-lg">
+          ✕
+        </button>
+      </div>
+      <div class="px-4 py-2">
+        <ul>
+          <li class="py-2">
+            <a class="text-white font-medium" href="./about.html">About</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="./blog.html">Blog</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="#">Download App</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="howtoplay.html">How to play</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="./contactus.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+    <!-- header ends -->
     
           <div id="heroColor" data-color="blue">
             <!-- <span class="hidden before:from-blue-950 before:via-blue-900 before:to-blue-800 from-blue-950 via-blue-900 to-blue-800 shadow-blue-950 text-blue-700">
