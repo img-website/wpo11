@@ -670,11 +670,6 @@ video {
   right: 0px;
 }
 
-.inset-y-0{
-  top: 0px;
-  bottom: 0px;
-}
-
 .bottom-0{
   bottom: 0px;
 }
@@ -747,20 +742,20 @@ video {
   z-index: 50;
 }
 
-.z-\[1\]{
-  z-index: 1;
+.z-\[1000\]{
+  z-index: 1000;
 }
 
-.z-\[999\]{
-  z-index: 999;
+.z-\[1\]{
+  z-index: 1;
 }
 
 .z-\[998\]{
   z-index: 998;
 }
 
-.z-\[1000\]{
-  z-index: 1000;
+.z-\[999\]{
+  z-index: 999;
 }
 
 .order-1{
@@ -1218,11 +1213,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-full{
-  --tw-translate-x: -100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-x-full{
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1246,10 +1236,6 @@ video {
 
 .transform-none{
   transform: none;
-}
-
-.cursor-pointer{
-  cursor: pointer;
 }
 
 .touch-auto{
@@ -1746,6 +1732,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-7{
   gap: 1.75rem;
 }
@@ -1781,18 +1771,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-5 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-5 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -2310,6 +2288,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-blue-900{
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
@@ -2340,9 +2323,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-gradient-to-r{
@@ -2368,6 +2350,12 @@ video {
 .from-gray-200{
   --tw-gradient-from: #e5e7eb var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(229 231 235 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-theme1{
+  --tw-gradient-from: #3130ee var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(49 48 238 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2415,6 +2403,10 @@ video {
 
 .to-theme1{
   --tw-gradient-to: #3130ee var(--tw-gradient-to-position);
+}
+
+.to-theme2{
+  --tw-gradient-to: #e61733 var(--tw-gradient-to-position);
 }
 
 .to-white\/60{
@@ -2560,16 +2552,16 @@ video {
   padding: 0.625rem;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
 .p-5{
   padding: 1.25rem;
 }
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-4{
-  padding: 1rem;
 }
 
 .px-1{
@@ -3369,6 +3361,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -3661,14 +3659,14 @@ video {
   font-weight: 700;
 }
 
-.hover\:text-theme2:hover{
-  --tw-text-opacity: 1;
-  color: rgb(230 23 51 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-200:hover{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.hover\:text-theme2:hover{
+  --tw-text-opacity: 1;
+  color: rgb(230 23 51 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-md:hover{
@@ -3966,6 +3964,22 @@ video {
 
   .md\:gap-10{
     gap: 2.5rem;
+  }
+
+  .md\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
+  .md\:gap-1{
+    gap: 0.25rem;
+  }
+
+  .md\:gap-14{
+    gap: 3.5rem;
   }
 
   .md\:gap-y-10{
